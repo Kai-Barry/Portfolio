@@ -6,7 +6,7 @@
 body {
 	font-family:'Nanum Myeongjo';
 	overflow-x: hidden;
-	background-color: crimson;
+	background-color: lightseagreen;
 }
 /*Front Screen*/
 .main-screen {
@@ -56,6 +56,11 @@ body {
 
 .links a {
 	text-decoration: none;
+}
+.links button {
+	border: none;
+  	outline: none;
+	background: none;
 }
 
 .links-img {
