@@ -11,7 +11,7 @@ body {
 /*Front Screen*/
 .main-screen {
 	width: 100vw;
-	height: 100vh;
+	height: 90vh;
 	background-color:white;
 	flex: 1;
     display: flex;
@@ -61,6 +61,7 @@ body {
 	border: none;
   	outline: none;
 	background: none;
+	font-family: 'Nanum Myeongjo';
 }
 
 .links-img {
