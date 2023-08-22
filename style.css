@@ -1,0 +1,638 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:'Nanum Myeongjo';
+	overflow-x: hidden;
+	background-color: crimson;
+}
+/*Front Screen*/
+.main-screen {
+	width: 100vw;
+	height: 100vh;
+	background-color:white;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	z-index: 300;
+	background-image: url(Images/background.jpg);
+}
+
+.main-info {
+	width:100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+}
+
+.centre {
+	width:100%;
+}
+
+.logo-title {
+	margin-top:4.5rem;
+	margin-bottom:4.5rem;
+	position: relative;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.links {
+	flex: 1;
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.links a {
+	text-decoration: none;
+}
+
+.links-img {
+	flex: 1;
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes logo-fade2 {
+	0% {
+		opacity: 0%;
+	}
+	35% {
+		opacity: 0%;
+	}
+	40% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes logo-fade1 {
+	0% {
+		opacity: 0%;
+	}
+	5% {
+		opacity: 100%;
+	}
+
+	25% {
+		opacity: 100%;
+	}
+
+	30% {
+		opacity: 0%;
+	}
+}
+#main-logo1 {
+	position: absolute;
+	font-family: 'Nanum Myeongjo';
+	font-size: 4.5rem;
+	color: cornsilk;
+	opacity:0%; 	
+	animation-name: logo-fade1;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 6s;
+}
+
+#main-logo2 {
+	position: absolute;
+	font-family: 'Nanum Myeongjo';
+	font-size: 4.5rem;
+	color: cornsilk;
+	opacity:100%; 	
+	animation-name: logo-fade2;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 6s;
+}
+
+.button {
+	margin: 2rem;
+	z-index: 3;
+	display: flex;
+	flex:1;
+	justify-content: center;
+	color: cornsilk;
+	background-color: rgba(0,0,0,.3);
+	outline-style: solid;
+	outline-color: cornsilk;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
+	border-radius: 100px;
+}
+
+.button:hover {
+	transition-duration: 0.3s;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button:hover p {
+	transition-duration: 0.3s;
+	color: cornsilk;
+	font-size: 1.5rem;
+}
+
+.button p {
+	margin: 1rem;
+    font-size: 1.5rem;
+    color: cornsilk;
+}
+
+.button a {
+	text-decoration: none!important;
+}
+
+.button p:hover, .button:hover p {
+    text-decoration: none;
+    transition: color, background-color;
+    transition-duration: 0.3s;
+}
+
+#link-logo {
+	width: 1.5rem;
+	margin: 1rem;
+	filter: invert(100%);
+}
+
+#link-logo:hover {
+	filter: invert(0%);
+	transition-duration: 0.3s;
+}
+
+/* Secondary Section*/
+.about-me {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/darkbokeh.jpg);
+}
+
+.about-section {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	position: relative;
+	flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.about-image img {
+	width: 20rem;
+	margin: 3rem;
+	box-shadow: none;
+    border-radius: 100%;
+	outline-style: solid;
+	outline-color: cornsilk;
+}
+
+.about-word {
+	margin-left: 10rem;
+	margin-right: 10rem;
+	flex: 1;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#about-title {
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 2rem;
+	color: cornsilk;
+	left:0;
+}
+
+#about-paragraph {
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: cornsilk;
+}
+
+/* Project */
+.project1 {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/darklines.jpg);
+}
+.project2 {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/brick.jpg);
+}
+.project3 {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/fractal.jpg);
+}
+.project4 {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/darkgreen.jpg);
+}
+.project5 {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/fractal2.jpg);
+}
+.project6 {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-color: rgb(65, 6, 18);
+}
+
+.project-wrap {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	position: relative;
+	flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-image img {
+	max-width: 40rem;
+	max-height: 30rem;
+	margin: 3rem;
+	background-color: white;
+	box-shadow: none;
+	border-radius: 10%;
+	outline-style: solid;
+	outline-color: cornsilk;
+}
+
+.project-word {
+	margin-left: 10rem;
+	margin-right: 10rem;
+	flex: 1;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#project-title {
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 2rem;
+	color: cornsilk;
+	left:0;
+}
+
+#project-paragraph {
+	font-weight: 400;
+	font-size: 1.5rem;
+	color:cornsilk;
+}
+
+#project-link {
+	width: 1.5rem;
+	margin-top: 1rem;
+	filter: invert(100%);
+}
+
+#project-link:hover {
+	filter: invert(50%);
+	transition-duration: 0.3s;
+}
+/*footer*/
+footer {
+	width: 100vw;
+	height: 30vh;
+	background-color: white;
+	flex: 1;
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+#footer-logo img {
+	width:1.5rem;
+	margin: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+@keyframes nav-color-fade{
+	0% {
+		background-color: rgba(0,0,0,0);
+		box-shadow: 0px 0px 0px rgba(255,255,255, 0);
+	}
+	90% {
+		background-color:rgba(0,0,0,0);
+		box-shadow: 0px 0px 0px rgba(255,255,255, 0);
+	}
+	100% {
+		background-color: white;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
+	}
+}
+
+.sticky-bar {
+	margin-bottom: 5%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 10%;
+	z-index: 3;
+	display: grid;
+	grid-template-columns: 22% auto 20%; 
+	grid-template-rows: 100%;
+	background: white;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
+	animation-name: nav-color-fade;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 3s;
+}
+
+@keyframes font-color-fade{
+	0% {
+		color: white;
+	}
+	90% {
+		color: white;
+	}
+	100% {
+		color: black;
+	}
+}
+
+#nav-logo {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	padding-left: 10%;
+	justify-self: stretch;
+	align-self: center;
+	font-family: 'Nanum Myeongjo';
+	font-size: 3vw;
+	color: black;
+	animation-name: font-color-fade;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 3s;
+}
+
+#nav-logo a:link, #nav-logo a:visited {
+	color: black;
+	text-decoration: none;
+	animation-name: font-color-fade;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 3s;
+}
+
+#nav-logo a:hover {
+	color: crimson;
+	text-decoration: none;
+	text-decoration: none;
+	transition: color, background-color;
+	transition-duration: 2;
+}
+
+
+.navigation-bar {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	justify-self: stretch;
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style-type: none;
+	font-size: 1.5vw;
+}
+
+.book {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	justify-self: center;
+	align-self: center;
+	font-size: 2vw;
+}
+
+@keyframes book-color-fade{
+	0% {
+		border: 2px solid white;
+		color: white;
+	}
+	90% {
+		border: 2px solid white;
+		color: white;
+	}
+	100% {
+		border: 2px solid black;
+		color:black;
+	}
+}
+
+.book a:link, .book a:visited {
+	background-color: none;
+	padding: 0.5em 1em;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: black;
+	animation-name: book-color-fade;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 3s;
+}
+
+.book a:hover {
+	background-color: black;
+	color:white;
+	transition-property: background-color, color;
+	transition-duration: 1s;
+	transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navigation-bar a:link,.navigation-bar a:visited {
+	text-decoration: none;
+	bottom:0;
+	color: black;
+	animation-name: font-color-fade;
+	animation-timing-function: linear;
+	animation-iteration-count:initial;
+	animation-duration: 3s;
+}
+
+.navigation-bar a:hover {
+	color: crimson;
+	text-decoration: none;
+	transition: color, background-color;
+	transition-duration: 2;
+}
+
+/* Secondary Section*/
+.second-section {
+	background-color: crimson;
+	width:100vw;
+	height: 100vh;
+	position:relative;
+}
+
+.second-section h2 {
+	margin-top: 10%;
+	margin-bottom: 5%;
+	text-align: center;
+	position:relative;
+	color:white;
+	font-family: 'Nanum Myeongjo';
+	font-size: 4vw;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 5% auto 5% auto 5% auto 9%; 
+	grid-template-rows: 10% auto 10% auto 10%;
+}
+
+.gallery img {
+	width: 26vw;
+	height: 26vh;
+	object-fit: cover;
+}
+
+.gallery img:nth-child(1) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row:2;
+}
+
+.gallery img:nth-child(2) {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row:2;
+}
+
+.gallery img:nth-child(3) {
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row:2;
+}
+
+.gallery img:nth-child(4) {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row:4;
+}
+
+.gallery img:nth-child(5) {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row:4;
+}
+
+.gallery img:nth-child(6) {
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row:4;
+}
+
+.gallery img:hover {
+	grid-column-start: 2;
+	grid-column-end: 7;
+	grid-row-start:2;
+	grid-row-end: 4;
+	object-fit: cover;
+	transition: grid-column-start, grid-column-end, grid-row;
+	transition-duration: 2;
+}
+
+.experience {
+	text-align: center;
+	color:white;	
+}
+
+.experience p{
+	font-size:1em;
+}
+
+.experience ul {
+	list-style-type: none;
+}
+
+/*accomodation*/
+.accomodation-sections {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.accom-pic {
+	width: 50vw;
+	height: 100vh;
+}
+.accom-pic img {
+	width: 50vw;
+	height: 100vh;
+	object-fit:cover;
+}
+.accom-det {
+	width: 50vw;
+	height: 100vh;
+	color:white;
+}
+
+.accom-det p {
+	margin: 10%;
+}
