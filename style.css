@@ -236,6 +236,16 @@ body {
 }
 
 /* Project */
+.projectThesis {
+	width: 100vw;
+	background-color: lightslategray;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-evenly;
+	background-image: url(Images/hand.jpg);
+}
 .project1 {
 	width: 100vw;
 	background-color: lightslategray;
